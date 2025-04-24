@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: chatbot-backend
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn chatbot_backend:app
+    plan: free
