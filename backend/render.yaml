@@ -2,6 +2,6 @@ services:
   - type: web
     name: chatbot-backend
     env: python
-    buildCommand: ""
-    startCommand: gunicorn chatbot_backend:app
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn backend.chatbot_backend:app
     plan: free
